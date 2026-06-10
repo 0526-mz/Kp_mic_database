@@ -1,0 +1,577 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kp MIC 数据库</title>
+  <script src="site-data.js"></script>
+  <style>
+    :root {
+      --ink: #1e2a32;
+      --muted: #61707a;
+      --line: #d8e0e5;
+      --surface: #ffffff;
+      --page: #f4f7f4;
+      --field: #eef4f1;
+      --green: #0f6f5c;
+      --green-soft: #dcebe5;
+      --amber: #b75c12;
+      --amber-soft: #fff0d9;
+      --blue: #25607a;
+      --blue-soft: #dfeff4;
+      --danger: #9d2f2f;
+      --shadow: 0 18px 50px rgba(32, 55, 58, 0.10);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(135deg, rgba(15,111,92,0.10), transparent 34%),
+        linear-gradient(225deg, rgba(37,96,122,0.12), transparent 42%),
+        var(--page);
+      font-family: "Aptos", "Segoe UI", "Microsoft YaHei", sans-serif;
+    }
+
+    header {
+      padding: 34px clamp(18px, 4vw, 48px) 22px;
+      border-bottom: 1px solid rgba(97,112,122,0.22);
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .subhead {
+      margin: 0;
+      max-width: 980px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(1480px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 22px 0 42px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .stat {
+      background: rgba(255,255,255,0.86);
+      border: 1px solid rgba(216,224,229,0.9);
+      box-shadow: var(--shadow);
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    .stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .stat strong {
+      display: block;
+      margin-top: 6px;
+      font-size: 26px;
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: 1.3fr repeat(4, minmax(130px, 0.6fr));
+      gap: 10px;
+      align-items: end;
+      padding: 14px;
+      background: rgba(255,255,255,0.78);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+
+    label {
+      display: grid;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    input, select {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: var(--field);
+      color: var(--ink);
+      border-radius: 6px;
+      padding: 10px 12px;
+      min-height: 40px;
+      font: inherit;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(360px, 0.65fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .panel {
+      background: rgba(255,255,255,0.9);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .panel-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(238,244,241,0.65);
+    }
+
+    .panel-head h2 {
+      margin: 0;
+      font-size: 17px;
+    }
+
+    .panel-head a {
+      color: var(--green);
+      font-size: 13px;
+      text-decoration: none;
+    }
+
+    .table-wrap {
+      overflow: auto;
+      max-height: 610px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 920px;
+    }
+
+    th, td {
+      border-bottom: 1px solid #e7ecef;
+      padding: 9px 10px;
+      text-align: left;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background: #f8faf9;
+      color: #45545d;
+      font-weight: 700;
+    }
+
+    tr:hover td { background: #f6faf8; }
+    button.row-button {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--green);
+      border-radius: 6px;
+      padding: 6px 9px;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 48px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .tag.ok { color: var(--green); background: var(--green-soft); }
+    .tag.noisy { color: var(--amber); background: var(--amber-soft); }
+
+    .matrix {
+      margin-top: 16px;
+    }
+
+    .matrix table { min-width: 980px; }
+    .mic-value {
+      font-weight: 700;
+      color: var(--blue);
+    }
+
+    .detail {
+      position: sticky;
+      top: 12px;
+    }
+
+    .chart-box {
+      padding: 14px;
+    }
+
+    .chart-box img {
+      width: 100%;
+      min-height: 260px;
+      object-fit: contain;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+    }
+
+    .empty-chart {
+      display: grid;
+      place-items: center;
+      min-height: 320px;
+      border: 1px dashed var(--line);
+      border-radius: 6px;
+      color: var(--muted);
+      background: #fbfcfb;
+    }
+
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      padding: 0 14px 14px;
+    }
+
+    .meta div {
+      background: #f8faf9;
+      border: 1px solid #e3eaed;
+      border-radius: 6px;
+      padding: 10px;
+      font-size: 13px;
+    }
+
+    .meta span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      margin-bottom: 4px;
+    }
+
+    .batch-list {
+      display: grid;
+      gap: 10px;
+      padding: 14px;
+    }
+
+    .batch {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      background: #fbfcfb;
+    }
+
+    .batch strong { display: block; margin-bottom: 4px; }
+    .batch p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
+
+    .help {
+      margin-top: 16px;
+      padding: 16px;
+      background: rgba(255,255,255,0.8);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    @media (max-width: 1050px) {
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .toolbar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .layout { grid-template-columns: 1fr; }
+      .detail { position: static; }
+    }
+
+    @media (max-width: 640px) {
+      main { width: min(100vw - 20px, 1480px); }
+      .stats, .toolbar, .meta { grid-template-columns: 1fr; }
+      header { padding-inline: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kp MIC 数据库</h1>
+    <p class="subhead">整合 0528-0529 与 0604 两批 MIC 检测结果，支持按批次、菌株、药物和曲线标记筛选；每条记录可直接查看对应 MIC 折线图。</p>
+  </header>
+
+  <main>
+    <section class="stats" id="stats"></section>
+
+    <section class="toolbar">
+      <label>搜索菌株或 MIC
+        <input id="searchInput" type="search" placeholder="例如 1807101274 或 >64" />
+      </label>
+      <label>批次
+        <select id="batchFilter"></select>
+      </label>
+      <label>药物
+        <select id="drugFilter"></select>
+      </label>
+      <label>曲线标记
+        <select id="flagFilter">
+          <option value="">全部</option>
+          <option value="ok">ok</option>
+          <option value="noisy">noisy</option>
+        </select>
+      </label>
+      <label>显示模式
+        <select id="viewFilter">
+          <option value="records">记录表</option>
+          <option value="matrix">MIC 矩阵</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="layout">
+      <div>
+        <section class="panel" id="recordsPanel">
+          <div class="panel-head">
+            <h2>MIC 记录</h2>
+            <span id="recordCount"></span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>批次</th>
+                  <th>菌株</th>
+                  <th>药物</th>
+                  <th>MIC</th>
+                  <th>波长</th>
+                  <th>Blank</th>
+                  <th>Control</th>
+                  <th>Flag</th>
+                  <th>复孔</th>
+                  <th>图</th>
+                </tr>
+              </thead>
+              <tbody id="recordsBody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel matrix" id="matrixPanel" hidden>
+          <div class="panel-head">
+            <h2>MIC 矩阵</h2>
+            <span id="matrixCount"></span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead id="matrixHead"></thead>
+              <tbody id="matrixBody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="help">
+          <strong>后续新增数据：</strong>
+          将新批次结果整理成与现有目录相同的结构，包含 <code>mic_summary.csv</code>、平均 OD 长表和 <code>charts</code> 目录；在 <code>build_mic_website.py</code> 的 <code>DATASETS</code> 中加入新目录配置，然后运行 <code>python build_mic_website.py</code> 即可更新本网站。
+        </section>
+      </div>
+
+      <aside class="panel detail">
+        <div class="panel-head">
+          <h2>曲线预览</h2>
+          <a id="chartLink" href="#" target="_blank" rel="noreferrer" hidden>打开 SVG</a>
+        </div>
+        <div class="chart-box" id="chartBox">
+          <div class="empty-chart">选择一条 MIC 记录查看曲线</div>
+        </div>
+        <div class="meta" id="detailMeta"></div>
+        <div class="panel-head">
+          <h2>批次说明</h2>
+        </div>
+        <div class="batch-list" id="batchList"></div>
+      </aside>
+    </section>
+  </main>
+
+  <script>
+    const DATA = window.MIC_DATA;
+    const state = {
+      search: "",
+      batch: "",
+      drug: "",
+      flag: "",
+      view: "records",
+      selectedKey: ""
+    };
+
+    const el = (id) => document.getElementById(id);
+
+    function initFilters() {
+      el("batchFilter").innerHTML = `<option value="">全部批次</option>` + DATA.batches.map(batch =>
+        `<option value="${batch.id}">${batch.name}</option>`
+      ).join("");
+
+      el("drugFilter").innerHTML = `<option value="">全部药物</option>` + DATA.drugOrder.map(drug =>
+        `<option value="${drug}">${drug}</option>`
+      ).join("");
+
+      el("searchInput").addEventListener("input", (event) => {
+        state.search = event.target.value.trim().toLowerCase();
+        render();
+      });
+      el("batchFilter").addEventListener("change", (event) => {
+        state.batch = event.target.value;
+        render();
+      });
+      el("drugFilter").addEventListener("change", (event) => {
+        state.drug = event.target.value;
+        render();
+      });
+      el("flagFilter").addEventListener("change", (event) => {
+        state.flag = event.target.value;
+        render();
+      });
+      el("viewFilter").addEventListener("change", (event) => {
+        state.view = event.target.value;
+        render();
+      });
+    }
+
+    function recordKey(record) {
+      return `${record.batch}|${record.strain}|${record.drug}`;
+    }
+
+    function filteredRecords() {
+      return DATA.records.filter(record => {
+        const searchBlob = `${record.batchName} ${record.strain} ${record.drug} ${record.mic}`.toLowerCase();
+        if (state.search && !searchBlob.includes(state.search)) return false;
+        if (state.batch && record.batch !== state.batch) return false;
+        if (state.drug && record.drug !== state.drug) return false;
+        if (state.flag && record.curveFlag !== state.flag) return false;
+        return true;
+      });
+    }
+
+    function renderStats(records) {
+      const strains = new Set(records.map(record => `${record.batch}|${record.strain}`));
+      const noisy = records.filter(record => record.curveFlag === "noisy").length;
+      const batches = new Set(records.map(record => record.batch));
+      el("stats").innerHTML = [
+        ["批次数", batches.size],
+        ["菌株数", strains.size],
+        ["MIC 记录", records.length],
+        ["需复核曲线", noisy]
+      ].map(([label, value]) => `<div class="stat"><span>${label}</span><strong>${value}</strong></div>`).join("");
+    }
+
+    function renderRecords(records) {
+      el("recordCount").textContent = `${records.length} 条`;
+      el("recordsBody").innerHTML = records.map(record => {
+        const key = recordKey(record);
+        const flagClass = record.curveFlag === "noisy" ? "noisy" : "ok";
+        return `<tr>
+          <td>${record.batchName}</td>
+          <td>${record.strain}</td>
+          <td>${record.drug}</td>
+          <td class="mic-value">${record.mic}</td>
+          <td>${record.wavelength}</td>
+          <td>${record.blankMean}</td>
+          <td>${record.controlMean}</td>
+          <td><span class="tag ${flagClass}">${record.curveFlag}</span></td>
+          <td>${record.replicateCount}</td>
+          <td><button class="row-button" data-key="${key}">查看</button></td>
+        </tr>`;
+      }).join("");
+
+      el("recordsBody").querySelectorAll("button[data-key]").forEach(button => {
+        button.addEventListener("click", () => selectRecord(button.dataset.key));
+      });
+    }
+
+    function renderMatrix(records) {
+      const rows = new Map();
+      records.forEach(record => {
+        const key = `${record.batch}|${record.strain}`;
+        if (!rows.has(key)) {
+          rows.set(key, { batchName: record.batchName, batch: record.batch, strain: record.strain, values: {} });
+        }
+        rows.get(key).values[record.drug] = record;
+      });
+
+      const drugs = state.drug ? [state.drug] : DATA.drugOrder;
+      el("matrixCount").textContent = `${rows.size} 个菌株`;
+      el("matrixHead").innerHTML = `<tr><th>批次</th><th>菌株</th>${drugs.map(drug => `<th>${drug}</th>`).join("")}</tr>`;
+      el("matrixBody").innerHTML = Array.from(rows.values()).map(row => {
+        const cells = drugs.map(drug => {
+          const record = row.values[drug];
+          if (!record) return "<td></td>";
+          const flagClass = record.curveFlag === "noisy" ? "noisy" : "ok";
+          return `<td><button class="row-button" data-key="${recordKey(record)}"><span class="mic-value">${record.mic}</span> <span class="tag ${flagClass}">${record.curveFlag}</span></button></td>`;
+        }).join("");
+        return `<tr><td>${row.batchName}</td><td>${row.strain}</td>${cells}</tr>`;
+      }).join("");
+
+      el("matrixBody").querySelectorAll("button[data-key]").forEach(button => {
+        button.addEventListener("click", () => selectRecord(button.dataset.key));
+      });
+    }
+
+    function selectRecord(key) {
+      const record = DATA.records.find(item => recordKey(item) === key);
+      if (!record) return;
+      state.selectedKey = key;
+      el("chartBox").innerHTML = `<img src="${record.chartPath}" alt="${record.strain} ${record.drug} MIC curve" />`;
+      el("chartLink").href = record.chartPath;
+      el("chartLink").hidden = false;
+      el("detailMeta").innerHTML = [
+        ["批次", record.batchName],
+        ["菌株", record.strain],
+        ["药物", record.drug],
+        ["MIC", record.mic],
+        ["波长", record.wavelength],
+        ["曲线标记", record.curveFlag],
+        ["Blank mean", record.blankMean],
+        ["Control mean", record.controlMean]
+      ].map(([label, value]) => `<div><span>${label}</span><strong>${value}</strong></div>`).join("");
+    }
+
+    function renderBatches() {
+      el("batchList").innerHTML = DATA.batches.map(batch => `
+        <div class="batch">
+          <strong>${batch.name}</strong>
+          <p>${batch.wavelength} · ${batch.strainCount} 株 · ${batch.recordCount} 条 MIC · noisy ${batch.noisyCount}</p>
+          <p>${batch.background}</p>
+          <p><a href="${batch.reportPath}" target="_blank" rel="noreferrer">打开原始报告</a></p>
+        </div>
+      `).join("");
+    }
+
+    function render() {
+      const records = filteredRecords();
+      renderStats(records);
+      el("recordsPanel").hidden = state.view !== "records";
+      el("matrixPanel").hidden = state.view !== "matrix";
+      renderRecords(records);
+      renderMatrix(records);
+    }
+
+    initFilters();
+    renderBatches();
+    render();
+    if (DATA.records.length) selectRecord(recordKey(DATA.records[0]));
+  </script>
+</body>
+</html>

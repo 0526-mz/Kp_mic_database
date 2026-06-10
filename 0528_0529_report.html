@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+<head>
+<meta charset='utf-8'/>
+<title>MIC Analysis</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 24px; color: #1f2933; }
+table { border-collapse: collapse; width: 100%; margin-bottom: 24px; }
+th, td { border: 1px solid #d9e2ec; padding: 8px 10px; font-size: 14px; }
+th { background: #f0f4f8; }
+a { color: #0f766e; text-decoration: none; }
+.chart-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; }
+.card { border: 1px solid #d9e2ec; border-radius: 8px; padding: 12px; }
+.card h3 { margin: 0 0 8px 0; font-size: 16px; }
+</style>
+</head>
+<body>
+<h1>Kp MIC Analysis</h1>
+<p>All OD600 values are corrected by subtracting LB background OD600 = 0.049 before averaging and MIC calling.</p>
+<h2>MIC Summary</h2>
+<table>
+<tr><th>Strain</th><th>Drug</th><th>MIC</th><th>Blank Mean</th><th>Control Mean</th><th>Curve Flag</th><th>Chart</th></tr>
+<tr><td>1801161205</td><td>ATM</td><td>&gt;64</td><td>-0.0079</td><td>0.6918</td><td>ok</td><td><a href='charts/1801161205__ATM.svg'>open</a></td></tr>
+<tr><td>1801161205</td><td>CRO</td><td>&gt;64</td><td>-0.0076</td><td>0.6918</td><td>noisy</td><td><a href='charts/1801161205__CRO.svg'>open</a></td></tr>
+<tr><td>1801161205</td><td>MEM</td><td>16</td><td>-0.0081</td><td>0.6918</td><td>ok</td><td><a href='charts/1801161205__MEM.svg'>open</a></td></tr>
+<tr><td>1801161205</td><td>LVX</td><td>&gt;8</td><td>-0.0063</td><td>0.6918</td><td>ok</td><td><a href='charts/1801161205__LVX.svg'>open</a></td></tr>
+<tr><td>1801161205</td><td>AMK</td><td>8</td><td>-0.0042</td><td>0.6918</td><td>ok</td><td><a href='charts/1801161205__AMK.svg'>open</a></td></tr>
+<tr><td>1801161205</td><td>POL</td><td>4</td><td>-0.0039</td><td>0.6918</td><td>noisy</td><td><a href='charts/1801161205__POL.svg'>open</a></td></tr>
+<tr><td>1801161205</td><td>TGC</td><td>2</td><td>0.0001</td><td>0.6918</td><td>ok</td><td><a href='charts/1801161205__TGC.svg'>open</a></td></tr>
+<tr><td>1801161205</td><td>SXT</td><td>&gt;16/304</td><td>-0.0080</td><td>0.8093</td><td>ok</td><td><a href='charts/1801161205__SXT.svg'>open</a></td></tr>
+<tr><td>1801161205</td><td>CAZ-AVI</td><td>64/4</td><td>-0.0076</td><td>0.8093</td><td>ok</td><td><a href='charts/1801161205__CAZ-AVI.svg'>open</a></td></tr>
+<tr><td>1801161205</td><td>ATM-AVI</td><td>&gt;64/4</td><td>-0.0060</td><td>0.8093</td><td>ok</td><td><a href='charts/1801161205__ATM-AVI.svg'>open</a></td></tr>
+<tr><td>1802041026</td><td>ATM</td><td>&gt;64</td><td>-0.0080</td><td>0.5790</td><td>noisy</td><td><a href='charts/1802041026__ATM.svg'>open</a></td></tr>
+<tr><td>1802041026</td><td>CRO</td><td>&gt;64</td><td>-0.0075</td><td>0.5790</td><td>noisy</td><td><a href='charts/1802041026__CRO.svg'>open</a></td></tr>
+<tr><td>1802041026</td><td>MEM</td><td>&gt;16</td><td>-0.0077</td><td>0.5790</td><td>noisy</td><td><a href='charts/1802041026__MEM.svg'>open</a></td></tr>
+<tr><td>1802041026</td><td>LVX</td><td>&gt;8</td><td>-0.0069</td><td>0.5790</td><td>noisy</td><td><a href='charts/1802041026__LVX.svg'>open</a></td></tr>
+<tr><td>1802041026</td><td>AMK</td><td>&gt;64</td><td>-0.0056</td><td>0.5790</td><td>ok</td><td><a href='charts/1802041026__AMK.svg'>open</a></td></tr>
+<tr><td>1802041026</td><td>POL</td><td>2</td><td>-0.0049</td><td>0.5790</td><td>ok</td><td><a href='charts/1802041026__POL.svg'>open</a></td></tr>
+<tr><td>1802041026</td><td>TGC</td><td>2</td><td>-0.0002</td><td>0.5790</td><td>noisy</td><td><a href='charts/1802041026__TGC.svg'>open</a></td></tr>
+<tr><td>1802041026</td><td>SXT</td><td>&gt;16/304</td><td>-0.0059</td><td>0.6520</td><td>ok</td><td><a href='charts/1802041026__SXT.svg'>open</a></td></tr>
+<tr><td>1802041026</td><td>CAZ-AVI</td><td>&gt;128/4</td><td>-0.0061</td><td>0.6520</td><td>ok</td><td><a href='charts/1802041026__CAZ-AVI.svg'>open</a></td></tr>
+<tr><td>1802041026</td><td>ATM-AVI</td><td>&gt;64/4</td><td>-0.0049</td><td>0.6520</td><td>noisy</td><td><a href='charts/1802041026__ATM-AVI.svg'>open</a></td></tr>
+<tr><td>1803271274</td><td>ATM</td><td>64</td><td>-0.0079</td><td>0.5554</td><td>ok</td><td><a href='charts/1803271274__ATM.svg'>open</a></td></tr>
+<tr><td>1803271274</td><td>CRO</td><td>0.25</td><td>-0.0083</td><td>0.5554</td><td>noisy</td><td><a href='charts/1803271274__CRO.svg'>open</a></td></tr>
+<tr><td>1803271274</td><td>MEM</td><td>16</td><td>-0.0073</td><td>0.5554</td><td>ok</td><td><a href='charts/1803271274__MEM.svg'>open</a></td></tr>
+<tr><td>1803271274</td><td>LVX</td><td>4</td><td>-0.0064</td><td>0.5554</td><td>ok</td><td><a href='charts/1803271274__LVX.svg'>open</a></td></tr>
+<tr><td>1803271274</td><td>AMK</td><td>16</td><td>-0.0051</td><td>0.5554</td><td>ok</td><td><a href='charts/1803271274__AMK.svg'>open</a></td></tr>
+<tr><td>1803271274</td><td>POL</td><td>2</td><td>-0.0049</td><td>0.5554</td><td>noisy</td><td><a href='charts/1803271274__POL.svg'>open</a></td></tr>
+<tr><td>1803271274</td><td>TGC</td><td>2</td><td>-0.0013</td><td>0.5554</td><td>ok</td><td><a href='charts/1803271274__TGC.svg'>open</a></td></tr>
+<tr><td>1803271274</td><td>SXT</td><td>&gt;16/304</td><td>-0.0060</td><td>0.5928</td><td>ok</td><td><a href='charts/1803271274__SXT.svg'>open</a></td></tr>
+<tr><td>1803271274</td><td>CAZ-AVI</td><td>64/4</td><td>-0.0065</td><td>0.5928</td><td>noisy</td><td><a href='charts/1803271274__CAZ-AVI.svg'>open</a></td></tr>
+<tr><td>1803271274</td><td>ATM-AVI</td><td>&gt;64/4</td><td>-0.0039</td><td>0.5928</td><td>noisy</td><td><a href='charts/1803271274__ATM-AVI.svg'>open</a></td></tr>
+<tr><td>1803291238</td><td>ATM</td><td>&gt;64</td><td>-0.0079</td><td>0.7104</td><td>noisy</td><td><a href='charts/1803291238__ATM.svg'>open</a></td></tr>
+<tr><td>1803291238</td><td>CRO</td><td>1</td><td>-0.0083</td><td>0.7104</td><td>ok</td><td><a href='charts/1803291238__CRO.svg'>open</a></td></tr>
+<tr><td>1803291238</td><td>MEM</td><td>16</td><td>-0.0077</td><td>0.7104</td><td>ok</td><td><a href='charts/1803291238__MEM.svg'>open</a></td></tr>
+<tr><td>1803291238</td><td>LVX</td><td>8</td><td>-0.0070</td><td>0.7104</td><td>ok</td><td><a href='charts/1803291238__LVX.svg'>open</a></td></tr>
+<tr><td>1803291238</td><td>AMK</td><td>8</td><td>-0.0050</td><td>0.7104</td><td>ok</td><td><a href='charts/1803291238__AMK.svg'>open</a></td></tr>
+<tr><td>1803291238</td><td>POL</td><td>2</td><td>-0.0044</td><td>0.7104</td><td>ok</td><td><a href='charts/1803291238__POL.svg'>open</a></td></tr>
+<tr><td>1803291238</td><td>TGC</td><td>0.5</td><td>-0.0009</td><td>0.7104</td><td>ok</td><td><a href='charts/1803291238__TGC.svg'>open</a></td></tr>
+<tr><td>1803291238</td><td>SXT</td><td>&gt;16/304</td><td>-0.0079</td><td>0.6125</td><td>ok</td><td><a href='charts/1803291238__SXT.svg'>open</a></td></tr>
+<tr><td>1803291238</td><td>CAZ-AVI</td><td>64/4</td><td>-0.0066</td><td>0.6125</td><td>ok</td><td><a href='charts/1803291238__CAZ-AVI.svg'>open</a></td></tr>
+<tr><td>1803291238</td><td>ATM-AVI</td><td>&gt;64/4</td><td>-0.0051</td><td>0.6125</td><td>ok</td><td><a href='charts/1803291238__ATM-AVI.svg'>open</a></td></tr>
+<tr><td>1804043044</td><td>ATM</td><td>64</td><td>-0.0083</td><td>0.6152</td><td>ok</td><td><a href='charts/1804043044__ATM.svg'>open</a></td></tr>
+<tr><td>1804043044</td><td>CRO</td><td>0.5</td><td>-0.0080</td><td>0.6152</td><td>ok</td><td><a href='charts/1804043044__CRO.svg'>open</a></td></tr>
+<tr><td>1804043044</td><td>MEM</td><td>4</td><td>-0.0072</td><td>0.6152</td><td>ok</td><td><a href='charts/1804043044__MEM.svg'>open</a></td></tr>
+<tr><td>1804043044</td><td>LVX</td><td>8</td><td>-0.0057</td><td>0.6152</td><td>ok</td><td><a href='charts/1804043044__LVX.svg'>open</a></td></tr>
+<tr><td>1804043044</td><td>AMK</td><td>8</td><td>-0.0046</td><td>0.6152</td><td>ok</td><td><a href='charts/1804043044__AMK.svg'>open</a></td></tr>
+<tr><td>1804043044</td><td>POL</td><td>2</td><td>-0.0041</td><td>0.6152</td><td>ok</td><td><a href='charts/1804043044__POL.svg'>open</a></td></tr>
+<tr><td>1804043044</td><td>TGC</td><td>2</td><td>0.0021</td><td>0.6152</td><td>ok</td><td><a href='charts/1804043044__TGC.svg'>open</a></td></tr>
+<tr><td>1804043044</td><td>SXT</td><td>&gt;16/304</td><td>-0.0079</td><td>0.3407</td><td>ok</td><td><a href='charts/1804043044__SXT.svg'>open</a></td></tr>
+<tr><td>1804043044</td><td>CAZ-AVI</td><td>&gt;128/4</td><td>-0.0072</td><td>0.3407</td><td>ok</td><td><a href='charts/1804043044__CAZ-AVI.svg'>open</a></td></tr>
+<tr><td>1804043044</td><td>ATM-AVI</td><td>&gt;64/4</td><td>-0.0055</td><td>0.3407</td><td>noisy</td><td><a href='charts/1804043044__ATM-AVI.svg'>open</a></td></tr>
+<tr><td>1806081002</td><td>ATM</td><td>32</td><td>-0.0076</td><td>0.6417</td><td>ok</td><td><a href='charts/1806081002__ATM.svg'>open</a></td></tr>
+<tr><td>1806081002</td><td>CRO</td><td>0.5</td><td>-0.0080</td><td>0.6417</td><td>ok</td><td><a href='charts/1806081002__CRO.svg'>open</a></td></tr>
+<tr><td>1806081002</td><td>MEM</td><td>8</td><td>-0.0075</td><td>0.6417</td><td>ok</td><td><a href='charts/1806081002__MEM.svg'>open</a></td></tr>
+<tr><td>1806081002</td><td>LVX</td><td>4</td><td>-0.0064</td><td>0.6417</td><td>ok</td><td><a href='charts/1806081002__LVX.svg'>open</a></td></tr>
+<tr><td>1806081002</td><td>AMK</td><td>4</td><td>-0.0054</td><td>0.6417</td><td>ok</td><td><a href='charts/1806081002__AMK.svg'>open</a></td></tr>
+<tr><td>1806081002</td><td>POL</td><td>2</td><td>-0.0047</td><td>0.6417</td><td>noisy</td><td><a href='charts/1806081002__POL.svg'>open</a></td></tr>
+<tr><td>1806081002</td><td>TGC</td><td>2</td><td>0.0016</td><td>0.6417</td><td>ok</td><td><a href='charts/1806081002__TGC.svg'>open</a></td></tr>
+<tr><td>1806081002</td><td>SXT</td><td>&gt;16/304</td><td>-0.0060</td><td>0.6536</td><td>ok</td><td><a href='charts/1806081002__SXT.svg'>open</a></td></tr>
+<tr><td>1806081002</td><td>CAZ-AVI</td><td>&gt;128/4</td><td>-0.0054</td><td>0.6536</td><td>ok</td><td><a href='charts/1806081002__CAZ-AVI.svg'>open</a></td></tr>
+<tr><td>1806081002</td><td>ATM-AVI</td><td>&gt;64/4</td><td>-0.0046</td><td>0.6536</td><td>noisy</td><td><a href='charts/1806081002__ATM-AVI.svg'>open</a></td></tr>
+<tr><td>1806231180</td><td>ATM</td><td>&gt;64</td><td>-0.0084</td><td>0.5815</td><td>ok</td><td><a href='charts/1806231180__ATM.svg'>open</a></td></tr>
+<tr><td>1806231180</td><td>CRO</td><td>4</td><td>-0.0083</td><td>0.5815</td><td>ok</td><td><a href='charts/1806231180__CRO.svg'>open</a></td></tr>
+<tr><td>1806231180</td><td>MEM</td><td>0.64</td><td>-0.0082</td><td>0.5815</td><td>ok</td><td><a href='charts/1806231180__MEM.svg'>open</a></td></tr>
+<tr><td>1806231180</td><td>LVX</td><td>&gt;8</td><td>-0.0069</td><td>0.5815</td><td>noisy</td><td><a href='charts/1806231180__LVX.svg'>open</a></td></tr>
+<tr><td>1806231180</td><td>AMK</td><td>4</td><td>-0.0050</td><td>0.5815</td><td>ok</td><td><a href='charts/1806231180__AMK.svg'>open</a></td></tr>
+<tr><td>1806231180</td><td>POL</td><td>2</td><td>-0.0047</td><td>0.5815</td><td>noisy</td><td><a href='charts/1806231180__POL.svg'>open</a></td></tr>
+<tr><td>1806231180</td><td>TGC</td><td>2</td><td>0.0003</td><td>0.5815</td><td>ok</td><td><a href='charts/1806231180__TGC.svg'>open</a></td></tr>
+<tr><td>1806231180</td><td>SXT</td><td>&gt;16/304</td><td>0.0044</td><td>0.4730</td><td>ok</td><td><a href='charts/1806231180__SXT.svg'>open</a></td></tr>
+<tr><td>1806231180</td><td>CAZ-AVI</td><td>&lt;=0.128/4</td><td>-0.0052</td><td>0.4730</td><td>ok</td><td><a href='charts/1806231180__CAZ-AVI.svg'>open</a></td></tr>
+<tr><td>1806231180</td><td>ATM-AVI</td><td>&lt;=0.064/4</td><td>-0.0036</td><td>0.4730</td><td>ok</td><td><a href='charts/1806231180__ATM-AVI.svg'>open</a></td></tr>
+<tr><td>1809281182</td><td>ATM</td><td>64</td><td>-0.0014</td><td>0.5610</td><td>ok</td><td><a href='charts/1809281182__ATM.svg'>open</a></td></tr>
+<tr><td>1809281182</td><td>CRO</td><td>0.125</td><td>-0.0003</td><td>0.5610</td><td>noisy</td><td><a href='charts/1809281182__CRO.svg'>open</a></td></tr>
+<tr><td>1809281182</td><td>MEM</td><td>4</td><td>-0.0000</td><td>0.5610</td><td>ok</td><td><a href='charts/1809281182__MEM.svg'>open</a></td></tr>
+<tr><td>1809281182</td><td>LVX</td><td>2</td><td>0.0136</td><td>0.5610</td><td>ok</td><td><a href='charts/1809281182__LVX.svg'>open</a></td></tr>
+<tr><td>1809281182</td><td>AMK</td><td>8</td><td>0.0041</td><td>0.5610</td><td>ok</td><td><a href='charts/1809281182__AMK.svg'>open</a></td></tr>
+<tr><td>1809281182</td><td>POL</td><td>8</td><td>0.0497</td><td>0.5610</td><td>ok</td><td><a href='charts/1809281182__POL.svg'>open</a></td></tr>
+<tr><td>1809281182</td><td>TGC</td><td>1</td><td>0.0095</td><td>0.5610</td><td>ok</td><td><a href='charts/1809281182__TGC.svg'>open</a></td></tr>
+<tr><td>1809281182</td><td>SXT</td><td>16/304</td><td>-0.0074</td><td>0.5515</td><td>ok</td><td><a href='charts/1809281182__SXT.svg'>open</a></td></tr>
+<tr><td>1809281182</td><td>CAZ-AVI</td><td>0.25/4</td><td>-0.0063</td><td>0.5515</td><td>ok</td><td><a href='charts/1809281182__CAZ-AVI.svg'>open</a></td></tr>
+<tr><td>1809281182</td><td>ATM-AVI</td><td>1/4</td><td>-0.0043</td><td>0.5515</td><td>noisy</td><td><a href='charts/1809281182__ATM-AVI.svg'>open</a></td></tr>
+<tr><td>1812121256</td><td>ATM</td><td>&gt;64</td><td>-0.0084</td><td>0.7177</td><td>noisy</td><td><a href='charts/1812121256__ATM.svg'>open</a></td></tr>
+<tr><td>1812121256</td><td>CRO</td><td>32</td><td>-0.0083</td><td>0.7177</td><td>ok</td><td><a href='charts/1812121256__CRO.svg'>open</a></td></tr>
+<tr><td>1812121256</td><td>MEM</td><td>8</td><td>-0.0082</td><td>0.7177</td><td>ok</td><td><a href='charts/1812121256__MEM.svg'>open</a></td></tr>
+<tr><td>1812121256</td><td>LVX</td><td>&gt;8</td><td>-0.0064</td><td>0.7177</td><td>noisy</td><td><a href='charts/1812121256__LVX.svg'>open</a></td></tr>
+<tr><td>1812121256</td><td>AMK</td><td>32</td><td>-0.0041</td><td>0.7177</td><td>ok</td><td><a href='charts/1812121256__AMK.svg'>open</a></td></tr>
+<tr><td>1812121256</td><td>POL</td><td>2</td><td>-0.0038</td><td>0.7177</td><td>ok</td><td><a href='charts/1812121256__POL.svg'>open</a></td></tr>
+<tr><td>1812121256</td><td>TGC</td><td>8</td><td>-0.0002</td><td>0.7177</td><td>ok</td><td><a href='charts/1812121256__TGC.svg'>open</a></td></tr>
+<tr><td>1812121256</td><td>SXT</td><td>&gt;16/304</td><td>-0.0072</td><td>0.4716</td><td>ok</td><td><a href='charts/1812121256__SXT.svg'>open</a></td></tr>
+<tr><td>1812121256</td><td>CAZ-AVI</td><td>64/4</td><td>-0.0072</td><td>0.4716</td><td>ok</td><td><a href='charts/1812121256__CAZ-AVI.svg'>open</a></td></tr>
+<tr><td>1812121256</td><td>ATM-AVI</td><td>&gt;64/4</td><td>-0.0055</td><td>0.4716</td><td>ok</td><td><a href='charts/1812121256__ATM-AVI.svg'>open</a></td></tr>
+<tr><td>1812281196</td><td>ATM</td><td>&lt;=0.064</td><td>0.2424</td><td>0.6213</td><td>noisy</td><td><a href='charts/1812281196__ATM.svg'>open</a></td></tr>
+<tr><td>1812281196</td><td>CRO</td><td>&lt;=0.064</td><td>0.2615</td><td>0.6213</td><td>noisy</td><td><a href='charts/1812281196__CRO.svg'>open</a></td></tr>
+<tr><td>1812281196</td><td>MEM</td><td>16</td><td>0.2712</td><td>0.6213</td><td>ok</td><td><a href='charts/1812281196__MEM.svg'>open</a></td></tr>
+<tr><td>1812281196</td><td>LVX</td><td>&gt;8</td><td>0.2709</td><td>0.6213</td><td>noisy</td><td><a href='charts/1812281196__LVX.svg'>open</a></td></tr>
+<tr><td>1812281196</td><td>AMK</td><td>8</td><td>0.2756</td><td>0.6213</td><td>noisy</td><td><a href='charts/1812281196__AMK.svg'>open</a></td></tr>
+<tr><td>1812281196</td><td>POL</td><td>4</td><td>0.2414</td><td>0.6213</td><td>noisy</td><td><a href='charts/1812281196__POL.svg'>open</a></td></tr>
+<tr><td>1812281196</td><td>TGC</td><td>2</td><td>0.0824</td><td>0.6213</td><td>noisy</td><td><a href='charts/1812281196__TGC.svg'>open</a></td></tr>
+<tr><td>1812281196</td><td>SXT</td><td>&gt;16/304</td><td>-0.0082</td><td>0.8661</td><td>ok</td><td><a href='charts/1812281196__SXT.svg'>open</a></td></tr>
+<tr><td>1812281196</td><td>CAZ-AVI</td><td>64/4</td><td>-0.0079</td><td>0.8661</td><td>noisy</td><td><a href='charts/1812281196__CAZ-AVI.svg'>open</a></td></tr>
+<tr><td>1812281196</td><td>ATM-AVI</td><td>&gt;64/4</td><td>-0.0063</td><td>0.8661</td><td>noisy</td><td><a href='charts/1812281196__ATM-AVI.svg'>open</a></td></tr>
+</table>
+<h2>Charts</h2>
+<div class='chart-grid'>
+<div class='card'><h3>1801161205 | ATM</h3><a href='charts/1801161205__ATM.svg'>open chart</a></div>
+<div class='card'><h3>1801161205 | CRO</h3><a href='charts/1801161205__CRO.svg'>open chart</a></div>
+<div class='card'><h3>1801161205 | MEM</h3><a href='charts/1801161205__MEM.svg'>open chart</a></div>
+<div class='card'><h3>1801161205 | LVX</h3><a href='charts/1801161205__LVX.svg'>open chart</a></div>
+<div class='card'><h3>1801161205 | AMK</h3><a href='charts/1801161205__AMK.svg'>open chart</a></div>
+<div class='card'><h3>1801161205 | POL</h3><a href='charts/1801161205__POL.svg'>open chart</a></div>
+<div class='card'><h3>1801161205 | TGC</h3><a href='charts/1801161205__TGC.svg'>open chart</a></div>
+<div class='card'><h3>1801161205 | SXT</h3><a href='charts/1801161205__SXT.svg'>open chart</a></div>
+<div class='card'><h3>1801161205 | CAZ-AVI</h3><a href='charts/1801161205__CAZ-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1801161205 | ATM-AVI</h3><a href='charts/1801161205__ATM-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1802041026 | ATM</h3><a href='charts/1802041026__ATM.svg'>open chart</a></div>
+<div class='card'><h3>1802041026 | CRO</h3><a href='charts/1802041026__CRO.svg'>open chart</a></div>
+<div class='card'><h3>1802041026 | MEM</h3><a href='charts/1802041026__MEM.svg'>open chart</a></div>
+<div class='card'><h3>1802041026 | LVX</h3><a href='charts/1802041026__LVX.svg'>open chart</a></div>
+<div class='card'><h3>1802041026 | AMK</h3><a href='charts/1802041026__AMK.svg'>open chart</a></div>
+<div class='card'><h3>1802041026 | POL</h3><a href='charts/1802041026__POL.svg'>open chart</a></div>
+<div class='card'><h3>1802041026 | TGC</h3><a href='charts/1802041026__TGC.svg'>open chart</a></div>
+<div class='card'><h3>1802041026 | SXT</h3><a href='charts/1802041026__SXT.svg'>open chart</a></div>
+<div class='card'><h3>1802041026 | CAZ-AVI</h3><a href='charts/1802041026__CAZ-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1802041026 | ATM-AVI</h3><a href='charts/1802041026__ATM-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1803271274 | ATM</h3><a href='charts/1803271274__ATM.svg'>open chart</a></div>
+<div class='card'><h3>1803271274 | CRO</h3><a href='charts/1803271274__CRO.svg'>open chart</a></div>
+<div class='card'><h3>1803271274 | MEM</h3><a href='charts/1803271274__MEM.svg'>open chart</a></div>
+<div class='card'><h3>1803271274 | LVX</h3><a href='charts/1803271274__LVX.svg'>open chart</a></div>
+<div class='card'><h3>1803271274 | AMK</h3><a href='charts/1803271274__AMK.svg'>open chart</a></div>
+<div class='card'><h3>1803271274 | POL</h3><a href='charts/1803271274__POL.svg'>open chart</a></div>
+<div class='card'><h3>1803271274 | TGC</h3><a href='charts/1803271274__TGC.svg'>open chart</a></div>
+<div class='card'><h3>1803271274 | SXT</h3><a href='charts/1803271274__SXT.svg'>open chart</a></div>
+<div class='card'><h3>1803271274 | CAZ-AVI</h3><a href='charts/1803271274__CAZ-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1803271274 | ATM-AVI</h3><a href='charts/1803271274__ATM-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1803291238 | ATM</h3><a href='charts/1803291238__ATM.svg'>open chart</a></div>
+<div class='card'><h3>1803291238 | CRO</h3><a href='charts/1803291238__CRO.svg'>open chart</a></div>
+<div class='card'><h3>1803291238 | MEM</h3><a href='charts/1803291238__MEM.svg'>open chart</a></div>
+<div class='card'><h3>1803291238 | LVX</h3><a href='charts/1803291238__LVX.svg'>open chart</a></div>
+<div class='card'><h3>1803291238 | AMK</h3><a href='charts/1803291238__AMK.svg'>open chart</a></div>
+<div class='card'><h3>1803291238 | POL</h3><a href='charts/1803291238__POL.svg'>open chart</a></div>
+<div class='card'><h3>1803291238 | TGC</h3><a href='charts/1803291238__TGC.svg'>open chart</a></div>
+<div class='card'><h3>1803291238 | SXT</h3><a href='charts/1803291238__SXT.svg'>open chart</a></div>
+<div class='card'><h3>1803291238 | CAZ-AVI</h3><a href='charts/1803291238__CAZ-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1803291238 | ATM-AVI</h3><a href='charts/1803291238__ATM-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1804043044 | ATM</h3><a href='charts/1804043044__ATM.svg'>open chart</a></div>
+<div class='card'><h3>1804043044 | CRO</h3><a href='charts/1804043044__CRO.svg'>open chart</a></div>
+<div class='card'><h3>1804043044 | MEM</h3><a href='charts/1804043044__MEM.svg'>open chart</a></div>
+<div class='card'><h3>1804043044 | LVX</h3><a href='charts/1804043044__LVX.svg'>open chart</a></div>
+<div class='card'><h3>1804043044 | AMK</h3><a href='charts/1804043044__AMK.svg'>open chart</a></div>
+<div class='card'><h3>1804043044 | POL</h3><a href='charts/1804043044__POL.svg'>open chart</a></div>
+<div class='card'><h3>1804043044 | TGC</h3><a href='charts/1804043044__TGC.svg'>open chart</a></div>
+<div class='card'><h3>1804043044 | SXT</h3><a href='charts/1804043044__SXT.svg'>open chart</a></div>
+<div class='card'><h3>1804043044 | CAZ-AVI</h3><a href='charts/1804043044__CAZ-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1804043044 | ATM-AVI</h3><a href='charts/1804043044__ATM-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1806081002 | ATM</h3><a href='charts/1806081002__ATM.svg'>open chart</a></div>
+<div class='card'><h3>1806081002 | CRO</h3><a href='charts/1806081002__CRO.svg'>open chart</a></div>
+<div class='card'><h3>1806081002 | MEM</h3><a href='charts/1806081002__MEM.svg'>open chart</a></div>
+<div class='card'><h3>1806081002 | LVX</h3><a href='charts/1806081002__LVX.svg'>open chart</a></div>
+<div class='card'><h3>1806081002 | AMK</h3><a href='charts/1806081002__AMK.svg'>open chart</a></div>
+<div class='card'><h3>1806081002 | POL</h3><a href='charts/1806081002__POL.svg'>open chart</a></div>
+<div class='card'><h3>1806081002 | TGC</h3><a href='charts/1806081002__TGC.svg'>open chart</a></div>
+<div class='card'><h3>1806081002 | SXT</h3><a href='charts/1806081002__SXT.svg'>open chart</a></div>
+<div class='card'><h3>1806081002 | CAZ-AVI</h3><a href='charts/1806081002__CAZ-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1806081002 | ATM-AVI</h3><a href='charts/1806081002__ATM-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1806231180 | ATM</h3><a href='charts/1806231180__ATM.svg'>open chart</a></div>
+<div class='card'><h3>1806231180 | CRO</h3><a href='charts/1806231180__CRO.svg'>open chart</a></div>
+<div class='card'><h3>1806231180 | MEM</h3><a href='charts/1806231180__MEM.svg'>open chart</a></div>
+<div class='card'><h3>1806231180 | LVX</h3><a href='charts/1806231180__LVX.svg'>open chart</a></div>
+<div class='card'><h3>1806231180 | AMK</h3><a href='charts/1806231180__AMK.svg'>open chart</a></div>
+<div class='card'><h3>1806231180 | POL</h3><a href='charts/1806231180__POL.svg'>open chart</a></div>
+<div class='card'><h3>1806231180 | TGC</h3><a href='charts/1806231180__TGC.svg'>open chart</a></div>
+<div class='card'><h3>1806231180 | SXT</h3><a href='charts/1806231180__SXT.svg'>open chart</a></div>
+<div class='card'><h3>1806231180 | CAZ-AVI</h3><a href='charts/1806231180__CAZ-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1806231180 | ATM-AVI</h3><a href='charts/1806231180__ATM-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1809281182 | ATM</h3><a href='charts/1809281182__ATM.svg'>open chart</a></div>
+<div class='card'><h3>1809281182 | CRO</h3><a href='charts/1809281182__CRO.svg'>open chart</a></div>
+<div class='card'><h3>1809281182 | MEM</h3><a href='charts/1809281182__MEM.svg'>open chart</a></div>
+<div class='card'><h3>1809281182 | LVX</h3><a href='charts/1809281182__LVX.svg'>open chart</a></div>
+<div class='card'><h3>1809281182 | AMK</h3><a href='charts/1809281182__AMK.svg'>open chart</a></div>
+<div class='card'><h3>1809281182 | POL</h3><a href='charts/1809281182__POL.svg'>open chart</a></div>
+<div class='card'><h3>1809281182 | TGC</h3><a href='charts/1809281182__TGC.svg'>open chart</a></div>
+<div class='card'><h3>1809281182 | SXT</h3><a href='charts/1809281182__SXT.svg'>open chart</a></div>
+<div class='card'><h3>1809281182 | CAZ-AVI</h3><a href='charts/1809281182__CAZ-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1809281182 | ATM-AVI</h3><a href='charts/1809281182__ATM-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1812121256 | ATM</h3><a href='charts/1812121256__ATM.svg'>open chart</a></div>
+<div class='card'><h3>1812121256 | CRO</h3><a href='charts/1812121256__CRO.svg'>open chart</a></div>
+<div class='card'><h3>1812121256 | MEM</h3><a href='charts/1812121256__MEM.svg'>open chart</a></div>
+<div class='card'><h3>1812121256 | LVX</h3><a href='charts/1812121256__LVX.svg'>open chart</a></div>
+<div class='card'><h3>1812121256 | AMK</h3><a href='charts/1812121256__AMK.svg'>open chart</a></div>
+<div class='card'><h3>1812121256 | POL</h3><a href='charts/1812121256__POL.svg'>open chart</a></div>
+<div class='card'><h3>1812121256 | TGC</h3><a href='charts/1812121256__TGC.svg'>open chart</a></div>
+<div class='card'><h3>1812121256 | SXT</h3><a href='charts/1812121256__SXT.svg'>open chart</a></div>
+<div class='card'><h3>1812121256 | CAZ-AVI</h3><a href='charts/1812121256__CAZ-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1812121256 | ATM-AVI</h3><a href='charts/1812121256__ATM-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1812281196 | ATM</h3><a href='charts/1812281196__ATM.svg'>open chart</a></div>
+<div class='card'><h3>1812281196 | CRO</h3><a href='charts/1812281196__CRO.svg'>open chart</a></div>
+<div class='card'><h3>1812281196 | MEM</h3><a href='charts/1812281196__MEM.svg'>open chart</a></div>
+<div class='card'><h3>1812281196 | LVX</h3><a href='charts/1812281196__LVX.svg'>open chart</a></div>
+<div class='card'><h3>1812281196 | AMK</h3><a href='charts/1812281196__AMK.svg'>open chart</a></div>
+<div class='card'><h3>1812281196 | POL</h3><a href='charts/1812281196__POL.svg'>open chart</a></div>
+<div class='card'><h3>1812281196 | TGC</h3><a href='charts/1812281196__TGC.svg'>open chart</a></div>
+<div class='card'><h3>1812281196 | SXT</h3><a href='charts/1812281196__SXT.svg'>open chart</a></div>
+<div class='card'><h3>1812281196 | CAZ-AVI</h3><a href='charts/1812281196__CAZ-AVI.svg'>open chart</a></div>
+<div class='card'><h3>1812281196 | ATM-AVI</h3><a href='charts/1812281196__ATM-AVI.svg'>open chart</a></div>
+</div>
+</body>
+</html>
