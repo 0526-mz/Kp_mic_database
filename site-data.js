@@ -16,7 +16,7 @@ window.MIC_DATA = {
       "id": "0528_0529",
       "name": "0528-0529 OD600",
       "resultDir": "mic_results",
-      "reportPath": "assets/mic_results/0528_0529_report.html",
+      "reportPath": "0528_0529_report.html",
       "wavelength": "OD600",
       "background": "LB fixed background 0.049 was subtracted.",
       "strainCount": 10,
@@ -27,7 +27,7 @@ window.MIC_DATA = {
       "id": "0604",
       "name": "0604 OD630",
       "resultDir": "mic_results_0604",
-      "reportPath": "assets/mic_results_0604/0604_report.html",
+      "reportPath": "mic_results_0604/0604_report.html",
       "wavelength": "OD630",
       "background": "Per-plate blank mean was subtracted.",
       "strainCount": 4,
@@ -47,7 +47,7 @@ window.MIC_DATA = {
       "controlMean": "0.6918",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1801161205__ATM.svg"
+      "chartPath": "charts/1801161205__ATM.svg"
     },
     {
       "batch": "0528_0529",
@@ -60,7 +60,7 @@ window.MIC_DATA = {
       "controlMean": "0.6918",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1801161205__CRO.svg"
+      "chartPath": "charts/1801161205__CRO.svg"
     },
     {
       "batch": "0528_0529",
@@ -73,7 +73,7 @@ window.MIC_DATA = {
       "controlMean": "0.6918",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1801161205__MEM.svg"
+      "chartPath": "charts/1801161205__MEM.svg"
     },
     {
       "batch": "0528_0529",
@@ -86,7 +86,7 @@ window.MIC_DATA = {
       "controlMean": "0.6918",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1801161205__LVX.svg"
+      "chartPath": "charts/1801161205__LVX.svg"
     },
     {
       "batch": "0528_0529",
@@ -99,7 +99,7 @@ window.MIC_DATA = {
       "controlMean": "0.6918",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1801161205__AMK.svg"
+      "chartPath": "charts/1801161205__AMK.svg"
     },
     {
       "batch": "0528_0529",
@@ -112,7 +112,7 @@ window.MIC_DATA = {
       "controlMean": "0.6918",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1801161205__POL.svg"
+      "chartPath": "charts/1801161205__POL.svg"
     },
     {
       "batch": "0528_0529",
@@ -125,7 +125,7 @@ window.MIC_DATA = {
       "controlMean": "0.6918",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1801161205__TGC.svg"
+      "chartPath": "charts/1801161205__TGC.svg"
     },
     {
       "batch": "0528_0529",
@@ -138,7 +138,7 @@ window.MIC_DATA = {
       "controlMean": "0.8093",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1801161205__SXT.svg"
+      "chartPath": "charts/1801161205__SXT.svg"
     },
     {
       "batch": "0528_0529",
@@ -151,7 +151,7 @@ window.MIC_DATA = {
       "controlMean": "0.8093",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1801161205__CAZ-AVI.svg"
+      "chartPath": "charts/1801161205__CAZ-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -164,7 +164,7 @@ window.MIC_DATA = {
       "controlMean": "0.8093",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1801161205__ATM-AVI.svg"
+      "chartPath": "charts/1801161205__ATM-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -177,7 +177,7 @@ window.MIC_DATA = {
       "controlMean": "0.5790",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1802041026__ATM.svg"
+      "chartPath": "charts/1802041026__ATM.svg"
     },
     {
       "batch": "0528_0529",
@@ -190,7 +190,7 @@ window.MIC_DATA = {
       "controlMean": "0.5790",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1802041026__CRO.svg"
+      "chartPath": "charts/1802041026__CRO.svg"
     },
     {
       "batch": "0528_0529",
@@ -203,7 +203,7 @@ window.MIC_DATA = {
       "controlMean": "0.5790",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1802041026__MEM.svg"
+      "chartPath": "charts/1802041026__MEM.svg"
     },
     {
       "batch": "0528_0529",
@@ -216,7 +216,7 @@ window.MIC_DATA = {
       "controlMean": "0.5790",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1802041026__LVX.svg"
+      "chartPath": "charts/1802041026__LVX.svg"
     },
     {
       "batch": "0528_0529",
@@ -229,7 +229,7 @@ window.MIC_DATA = {
       "controlMean": "0.5790",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1802041026__AMK.svg"
+      "chartPath": "charts/1802041026__AMK.svg"
     },
     {
       "batch": "0528_0529",
@@ -242,7 +242,7 @@ window.MIC_DATA = {
       "controlMean": "0.5790",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1802041026__POL.svg"
+      "chartPath": "charts/1802041026__POL.svg"
     },
     {
       "batch": "0528_0529",
@@ -255,7 +255,7 @@ window.MIC_DATA = {
       "controlMean": "0.5790",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1802041026__TGC.svg"
+      "chartPath": "charts/1802041026__TGC.svg"
     },
     {
       "batch": "0528_0529",
@@ -268,7 +268,7 @@ window.MIC_DATA = {
       "controlMean": "0.6520",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1802041026__SXT.svg"
+      "chartPath": "charts/1802041026__SXT.svg"
     },
     {
       "batch": "0528_0529",
@@ -281,7 +281,7 @@ window.MIC_DATA = {
       "controlMean": "0.6520",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1802041026__CAZ-AVI.svg"
+      "chartPath": "charts/1802041026__CAZ-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -294,7 +294,7 @@ window.MIC_DATA = {
       "controlMean": "0.6520",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1802041026__ATM-AVI.svg"
+      "chartPath": "charts/1802041026__ATM-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -307,7 +307,7 @@ window.MIC_DATA = {
       "controlMean": "0.5554",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803271274__ATM.svg"
+      "chartPath": "charts/1803271274__ATM.svg"
     },
     {
       "batch": "0528_0529",
@@ -320,7 +320,7 @@ window.MIC_DATA = {
       "controlMean": "0.5554",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803271274__CRO.svg"
+      "chartPath": "charts/1803271274__CRO.svg"
     },
     {
       "batch": "0528_0529",
@@ -333,7 +333,7 @@ window.MIC_DATA = {
       "controlMean": "0.5554",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803271274__MEM.svg"
+      "chartPath": "charts/1803271274__MEM.svg"
     },
     {
       "batch": "0528_0529",
@@ -346,7 +346,7 @@ window.MIC_DATA = {
       "controlMean": "0.5554",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803271274__LVX.svg"
+      "chartPath": "charts/1803271274__LVX.svg"
     },
     {
       "batch": "0528_0529",
@@ -359,7 +359,7 @@ window.MIC_DATA = {
       "controlMean": "0.5554",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803271274__AMK.svg"
+      "chartPath": "charts/1803271274__AMK.svg"
     },
     {
       "batch": "0528_0529",
@@ -372,7 +372,7 @@ window.MIC_DATA = {
       "controlMean": "0.5554",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803271274__POL.svg"
+      "chartPath": "charts/1803271274__POL.svg"
     },
     {
       "batch": "0528_0529",
@@ -385,7 +385,7 @@ window.MIC_DATA = {
       "controlMean": "0.5554",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803271274__TGC.svg"
+      "chartPath": "charts/1803271274__TGC.svg"
     },
     {
       "batch": "0528_0529",
@@ -398,7 +398,7 @@ window.MIC_DATA = {
       "controlMean": "0.5928",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803271274__SXT.svg"
+      "chartPath": "charts/1803271274__SXT.svg"
     },
     {
       "batch": "0528_0529",
@@ -411,7 +411,7 @@ window.MIC_DATA = {
       "controlMean": "0.5928",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803271274__CAZ-AVI.svg"
+      "chartPath": "charts/1803271274__CAZ-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -424,7 +424,7 @@ window.MIC_DATA = {
       "controlMean": "0.5928",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803271274__ATM-AVI.svg"
+      "chartPath": "charts/1803271274__ATM-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -437,7 +437,7 @@ window.MIC_DATA = {
       "controlMean": "0.7104",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803291238__ATM.svg"
+      "chartPath": "charts/1803291238__ATM.svg"
     },
     {
       "batch": "0528_0529",
@@ -450,7 +450,7 @@ window.MIC_DATA = {
       "controlMean": "0.7104",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803291238__CRO.svg"
+      "chartPath": "charts/1803291238__CRO.svg"
     },
     {
       "batch": "0528_0529",
@@ -463,7 +463,7 @@ window.MIC_DATA = {
       "controlMean": "0.7104",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803291238__MEM.svg"
+      "chartPath": "charts/1803291238__MEM.svg"
     },
     {
       "batch": "0528_0529",
@@ -476,7 +476,7 @@ window.MIC_DATA = {
       "controlMean": "0.7104",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803291238__LVX.svg"
+      "chartPath": "charts/1803291238__LVX.svg"
     },
     {
       "batch": "0528_0529",
@@ -489,7 +489,7 @@ window.MIC_DATA = {
       "controlMean": "0.7104",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803291238__AMK.svg"
+      "chartPath": "charts/1803291238__AMK.svg"
     },
     {
       "batch": "0528_0529",
@@ -502,7 +502,7 @@ window.MIC_DATA = {
       "controlMean": "0.7104",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803291238__POL.svg"
+      "chartPath": "charts/1803291238__POL.svg"
     },
     {
       "batch": "0528_0529",
@@ -515,7 +515,7 @@ window.MIC_DATA = {
       "controlMean": "0.7104",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803291238__TGC.svg"
+      "chartPath": "charts/1803291238__TGC.svg"
     },
     {
       "batch": "0528_0529",
@@ -528,7 +528,7 @@ window.MIC_DATA = {
       "controlMean": "0.6125",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803291238__SXT.svg"
+      "chartPath": "charts/1803291238__SXT.svg"
     },
     {
       "batch": "0528_0529",
@@ -541,7 +541,7 @@ window.MIC_DATA = {
       "controlMean": "0.6125",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803291238__CAZ-AVI.svg"
+      "chartPath": "charts/1803291238__CAZ-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -554,7 +554,7 @@ window.MIC_DATA = {
       "controlMean": "0.6125",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1803291238__ATM-AVI.svg"
+      "chartPath": "charts/1803291238__ATM-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -567,7 +567,7 @@ window.MIC_DATA = {
       "controlMean": "0.6152",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1804043044__ATM.svg"
+      "chartPath": "charts/1804043044__ATM.svg"
     },
     {
       "batch": "0528_0529",
@@ -580,7 +580,7 @@ window.MIC_DATA = {
       "controlMean": "0.6152",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1804043044__CRO.svg"
+      "chartPath": "charts/1804043044__CRO.svg"
     },
     {
       "batch": "0528_0529",
@@ -593,7 +593,7 @@ window.MIC_DATA = {
       "controlMean": "0.6152",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1804043044__MEM.svg"
+      "chartPath": "charts/1804043044__MEM.svg"
     },
     {
       "batch": "0528_0529",
@@ -606,7 +606,7 @@ window.MIC_DATA = {
       "controlMean": "0.6152",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1804043044__LVX.svg"
+      "chartPath": "charts/1804043044__LVX.svg"
     },
     {
       "batch": "0528_0529",
@@ -619,7 +619,7 @@ window.MIC_DATA = {
       "controlMean": "0.6152",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1804043044__AMK.svg"
+      "chartPath": "charts/1804043044__AMK.svg"
     },
     {
       "batch": "0528_0529",
@@ -632,7 +632,7 @@ window.MIC_DATA = {
       "controlMean": "0.6152",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1804043044__POL.svg"
+      "chartPath": "charts/1804043044__POL.svg"
     },
     {
       "batch": "0528_0529",
@@ -645,7 +645,7 @@ window.MIC_DATA = {
       "controlMean": "0.6152",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1804043044__TGC.svg"
+      "chartPath": "charts/1804043044__TGC.svg"
     },
     {
       "batch": "0528_0529",
@@ -658,7 +658,7 @@ window.MIC_DATA = {
       "controlMean": "0.3407",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1804043044__SXT.svg"
+      "chartPath": "charts/1804043044__SXT.svg"
     },
     {
       "batch": "0528_0529",
@@ -671,7 +671,7 @@ window.MIC_DATA = {
       "controlMean": "0.3407",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1804043044__CAZ-AVI.svg"
+      "chartPath": "charts/1804043044__CAZ-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -684,7 +684,7 @@ window.MIC_DATA = {
       "controlMean": "0.3407",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1804043044__ATM-AVI.svg"
+      "chartPath": "charts/1804043044__ATM-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -697,7 +697,7 @@ window.MIC_DATA = {
       "controlMean": "0.6417",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806081002__ATM.svg"
+      "chartPath": "charts/1806081002__ATM.svg"
     },
     {
       "batch": "0528_0529",
@@ -710,7 +710,7 @@ window.MIC_DATA = {
       "controlMean": "0.6417",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806081002__CRO.svg"
+      "chartPath": "charts/1806081002__CRO.svg"
     },
     {
       "batch": "0528_0529",
@@ -723,7 +723,7 @@ window.MIC_DATA = {
       "controlMean": "0.6417",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806081002__MEM.svg"
+      "chartPath": "charts/1806081002__MEM.svg"
     },
     {
       "batch": "0528_0529",
@@ -736,7 +736,7 @@ window.MIC_DATA = {
       "controlMean": "0.6417",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806081002__LVX.svg"
+      "chartPath": "charts/1806081002__LVX.svg"
     },
     {
       "batch": "0528_0529",
@@ -749,7 +749,7 @@ window.MIC_DATA = {
       "controlMean": "0.6417",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806081002__AMK.svg"
+      "chartPath": "charts/1806081002__AMK.svg"
     },
     {
       "batch": "0528_0529",
@@ -762,7 +762,7 @@ window.MIC_DATA = {
       "controlMean": "0.6417",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806081002__POL.svg"
+      "chartPath": "charts/1806081002__POL.svg"
     },
     {
       "batch": "0528_0529",
@@ -775,7 +775,7 @@ window.MIC_DATA = {
       "controlMean": "0.6417",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806081002__TGC.svg"
+      "chartPath": "charts/1806081002__TGC.svg"
     },
     {
       "batch": "0528_0529",
@@ -788,7 +788,7 @@ window.MIC_DATA = {
       "controlMean": "0.6536",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806081002__SXT.svg"
+      "chartPath": "charts/1806081002__SXT.svg"
     },
     {
       "batch": "0528_0529",
@@ -801,7 +801,7 @@ window.MIC_DATA = {
       "controlMean": "0.6536",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806081002__CAZ-AVI.svg"
+      "chartPath": "charts/1806081002__CAZ-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -814,7 +814,7 @@ window.MIC_DATA = {
       "controlMean": "0.6536",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806081002__ATM-AVI.svg"
+      "chartPath": "charts/1806081002__ATM-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -827,7 +827,7 @@ window.MIC_DATA = {
       "controlMean": "0.5815",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806231180__ATM.svg"
+      "chartPath": "charts/1806231180__ATM.svg"
     },
     {
       "batch": "0528_0529",
@@ -840,7 +840,7 @@ window.MIC_DATA = {
       "controlMean": "0.5815",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806231180__CRO.svg"
+      "chartPath": "charts/1806231180__CRO.svg"
     },
     {
       "batch": "0528_0529",
@@ -853,7 +853,7 @@ window.MIC_DATA = {
       "controlMean": "0.5815",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806231180__MEM.svg"
+      "chartPath": "charts/1806231180__MEM.svg"
     },
     {
       "batch": "0528_0529",
@@ -866,7 +866,7 @@ window.MIC_DATA = {
       "controlMean": "0.5815",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806231180__LVX.svg"
+      "chartPath": "charts/1806231180__LVX.svg"
     },
     {
       "batch": "0528_0529",
@@ -879,7 +879,7 @@ window.MIC_DATA = {
       "controlMean": "0.5815",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806231180__AMK.svg"
+      "chartPath": "charts/1806231180__AMK.svg"
     },
     {
       "batch": "0528_0529",
@@ -892,7 +892,7 @@ window.MIC_DATA = {
       "controlMean": "0.5815",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806231180__POL.svg"
+      "chartPath": "charts/1806231180__POL.svg"
     },
     {
       "batch": "0528_0529",
@@ -905,7 +905,7 @@ window.MIC_DATA = {
       "controlMean": "0.5815",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806231180__TGC.svg"
+      "chartPath": "charts/1806231180__TGC.svg"
     },
     {
       "batch": "0528_0529",
@@ -918,7 +918,7 @@ window.MIC_DATA = {
       "controlMean": "0.4730",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806231180__SXT.svg"
+      "chartPath": "charts/1806231180__SXT.svg"
     },
     {
       "batch": "0528_0529",
@@ -931,7 +931,7 @@ window.MIC_DATA = {
       "controlMean": "0.4730",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806231180__CAZ-AVI.svg"
+      "chartPath": "charts/1806231180__CAZ-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -944,7 +944,7 @@ window.MIC_DATA = {
       "controlMean": "0.4730",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1806231180__ATM-AVI.svg"
+      "chartPath": "charts/1806231180__ATM-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -957,7 +957,7 @@ window.MIC_DATA = {
       "controlMean": "0.5610",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1809281182__ATM.svg"
+      "chartPath": "charts/1809281182__ATM.svg"
     },
     {
       "batch": "0528_0529",
@@ -970,7 +970,7 @@ window.MIC_DATA = {
       "controlMean": "0.5610",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1809281182__CRO.svg"
+      "chartPath": "charts/1809281182__CRO.svg"
     },
     {
       "batch": "0528_0529",
@@ -983,7 +983,7 @@ window.MIC_DATA = {
       "controlMean": "0.5610",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1809281182__MEM.svg"
+      "chartPath": "charts/1809281182__MEM.svg"
     },
     {
       "batch": "0528_0529",
@@ -996,7 +996,7 @@ window.MIC_DATA = {
       "controlMean": "0.5610",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1809281182__LVX.svg"
+      "chartPath": "charts/1809281182__LVX.svg"
     },
     {
       "batch": "0528_0529",
@@ -1009,7 +1009,7 @@ window.MIC_DATA = {
       "controlMean": "0.5610",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1809281182__AMK.svg"
+      "chartPath": "charts/1809281182__AMK.svg"
     },
     {
       "batch": "0528_0529",
@@ -1022,7 +1022,7 @@ window.MIC_DATA = {
       "controlMean": "0.5610",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1809281182__POL.svg"
+      "chartPath": "charts/1809281182__POL.svg"
     },
     {
       "batch": "0528_0529",
@@ -1035,7 +1035,7 @@ window.MIC_DATA = {
       "controlMean": "0.5610",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1809281182__TGC.svg"
+      "chartPath": "charts/1809281182__TGC.svg"
     },
     {
       "batch": "0528_0529",
@@ -1048,7 +1048,7 @@ window.MIC_DATA = {
       "controlMean": "0.5515",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1809281182__SXT.svg"
+      "chartPath": "charts/1809281182__SXT.svg"
     },
     {
       "batch": "0528_0529",
@@ -1061,7 +1061,7 @@ window.MIC_DATA = {
       "controlMean": "0.5515",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1809281182__CAZ-AVI.svg"
+      "chartPath": "charts/1809281182__CAZ-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -1074,7 +1074,7 @@ window.MIC_DATA = {
       "controlMean": "0.5515",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1809281182__ATM-AVI.svg"
+      "chartPath": "charts/1809281182__ATM-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -1087,7 +1087,7 @@ window.MIC_DATA = {
       "controlMean": "0.7177",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812121256__ATM.svg"
+      "chartPath": "charts/1812121256__ATM.svg"
     },
     {
       "batch": "0528_0529",
@@ -1100,7 +1100,7 @@ window.MIC_DATA = {
       "controlMean": "0.7177",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812121256__CRO.svg"
+      "chartPath": "charts/1812121256__CRO.svg"
     },
     {
       "batch": "0528_0529",
@@ -1113,7 +1113,7 @@ window.MIC_DATA = {
       "controlMean": "0.7177",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812121256__MEM.svg"
+      "chartPath": "charts/1812121256__MEM.svg"
     },
     {
       "batch": "0528_0529",
@@ -1126,7 +1126,7 @@ window.MIC_DATA = {
       "controlMean": "0.7177",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812121256__LVX.svg"
+      "chartPath": "charts/1812121256__LVX.svg"
     },
     {
       "batch": "0528_0529",
@@ -1139,7 +1139,7 @@ window.MIC_DATA = {
       "controlMean": "0.7177",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812121256__AMK.svg"
+      "chartPath": "charts/1812121256__AMK.svg"
     },
     {
       "batch": "0528_0529",
@@ -1152,7 +1152,7 @@ window.MIC_DATA = {
       "controlMean": "0.7177",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812121256__POL.svg"
+      "chartPath": "charts/1812121256__POL.svg"
     },
     {
       "batch": "0528_0529",
@@ -1165,7 +1165,7 @@ window.MIC_DATA = {
       "controlMean": "0.7177",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812121256__TGC.svg"
+      "chartPath": "charts/1812121256__TGC.svg"
     },
     {
       "batch": "0528_0529",
@@ -1178,7 +1178,7 @@ window.MIC_DATA = {
       "controlMean": "0.4716",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812121256__SXT.svg"
+      "chartPath": "charts/1812121256__SXT.svg"
     },
     {
       "batch": "0528_0529",
@@ -1191,7 +1191,7 @@ window.MIC_DATA = {
       "controlMean": "0.4716",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812121256__CAZ-AVI.svg"
+      "chartPath": "charts/1812121256__CAZ-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -1204,7 +1204,7 @@ window.MIC_DATA = {
       "controlMean": "0.4716",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812121256__ATM-AVI.svg"
+      "chartPath": "charts/1812121256__ATM-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -1217,7 +1217,7 @@ window.MIC_DATA = {
       "controlMean": "0.6213",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812281196__ATM.svg"
+      "chartPath": "charts/1812281196__ATM.svg"
     },
     {
       "batch": "0528_0529",
@@ -1230,7 +1230,7 @@ window.MIC_DATA = {
       "controlMean": "0.6213",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812281196__CRO.svg"
+      "chartPath": "charts/1812281196__CRO.svg"
     },
     {
       "batch": "0528_0529",
@@ -1243,7 +1243,7 @@ window.MIC_DATA = {
       "controlMean": "0.6213",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812281196__MEM.svg"
+      "chartPath": "charts/1812281196__MEM.svg"
     },
     {
       "batch": "0528_0529",
@@ -1256,7 +1256,7 @@ window.MIC_DATA = {
       "controlMean": "0.6213",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812281196__LVX.svg"
+      "chartPath": "charts/1812281196__LVX.svg"
     },
     {
       "batch": "0528_0529",
@@ -1269,7 +1269,7 @@ window.MIC_DATA = {
       "controlMean": "0.6213",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812281196__AMK.svg"
+      "chartPath": "charts/1812281196__AMK.svg"
     },
     {
       "batch": "0528_0529",
@@ -1282,7 +1282,7 @@ window.MIC_DATA = {
       "controlMean": "0.6213",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812281196__POL.svg"
+      "chartPath": "charts/1812281196__POL.svg"
     },
     {
       "batch": "0528_0529",
@@ -1295,7 +1295,7 @@ window.MIC_DATA = {
       "controlMean": "0.6213",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812281196__TGC.svg"
+      "chartPath": "charts/1812281196__TGC.svg"
     },
     {
       "batch": "0528_0529",
@@ -1308,7 +1308,7 @@ window.MIC_DATA = {
       "controlMean": "0.8661",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812281196__SXT.svg"
+      "chartPath": "charts/1812281196__SXT.svg"
     },
     {
       "batch": "0528_0529",
@@ -1321,7 +1321,7 @@ window.MIC_DATA = {
       "controlMean": "0.8661",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812281196__CAZ-AVI.svg"
+      "chartPath": "charts/1812281196__CAZ-AVI.svg"
     },
     {
       "batch": "0528_0529",
@@ -1334,7 +1334,7 @@ window.MIC_DATA = {
       "controlMean": "0.8661",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results/charts/1812281196__ATM-AVI.svg"
+      "chartPath": "charts/1812281196__ATM-AVI.svg"
     },
     {
       "batch": "0604",
@@ -1347,7 +1347,7 @@ window.MIC_DATA = {
       "controlMean": "0.7452",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1803251139__ATM.svg"
+      "chartPath": "charts/1803251139__ATM.svg"
     },
     {
       "batch": "0604",
@@ -1360,7 +1360,7 @@ window.MIC_DATA = {
       "controlMean": "0.7452",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1803251139__CRO.svg"
+      "chartPath": "charts/1803251139__CRO.svg"
     },
     {
       "batch": "0604",
@@ -1373,7 +1373,7 @@ window.MIC_DATA = {
       "controlMean": "0.7452",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1803251139__MEM.svg"
+      "chartPath": "charts/1803251139__MEM.svg"
     },
     {
       "batch": "0604",
@@ -1386,7 +1386,7 @@ window.MIC_DATA = {
       "controlMean": "0.7452",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1803251139__LVX.svg"
+      "chartPath": "charts/1803251139__LVX.svg"
     },
     {
       "batch": "0604",
@@ -1399,7 +1399,7 @@ window.MIC_DATA = {
       "controlMean": "0.7452",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1803251139__AMK.svg"
+      "chartPath": "charts/1803251139__AMK.svg"
     },
     {
       "batch": "0604",
@@ -1412,7 +1412,7 @@ window.MIC_DATA = {
       "controlMean": "0.7452",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1803251139__POL.svg"
+      "chartPath": "charts/1803251139__POL.svg"
     },
     {
       "batch": "0604",
@@ -1425,7 +1425,7 @@ window.MIC_DATA = {
       "controlMean": "0.7452",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1803251139__TGC.svg"
+      "chartPath": "charts/1803251139__TGC.svg"
     },
     {
       "batch": "0604",
@@ -1438,7 +1438,7 @@ window.MIC_DATA = {
       "controlMean": "0.7785",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1803251139__SXT.svg"
+      "chartPath": "charts/1803251139__SXT.svg"
     },
     {
       "batch": "0604",
@@ -1451,7 +1451,7 @@ window.MIC_DATA = {
       "controlMean": "0.7785",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1803251139__CAZ-AVI.svg"
+      "chartPath": "charts/1803251139__CAZ-AVI.svg"
     },
     {
       "batch": "0604",
@@ -1464,7 +1464,7 @@ window.MIC_DATA = {
       "controlMean": "0.7785",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1803251139__ATM-AVI.svg"
+      "chartPath": "charts/1803251139__ATM-AVI.svg"
     },
     {
       "batch": "0604",
@@ -1477,7 +1477,7 @@ window.MIC_DATA = {
       "controlMean": "0.6497",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1804121299__ATM.svg"
+      "chartPath": "charts/1804121299__ATM.svg"
     },
     {
       "batch": "0604",
@@ -1490,7 +1490,7 @@ window.MIC_DATA = {
       "controlMean": "0.6497",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1804121299__CRO.svg"
+      "chartPath": "charts/1804121299__CRO.svg"
     },
     {
       "batch": "0604",
@@ -1503,7 +1503,7 @@ window.MIC_DATA = {
       "controlMean": "0.6497",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1804121299__MEM.svg"
+      "chartPath": "charts/1804121299__MEM.svg"
     },
     {
       "batch": "0604",
@@ -1516,7 +1516,7 @@ window.MIC_DATA = {
       "controlMean": "0.6497",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1804121299__LVX.svg"
+      "chartPath": "charts/1804121299__LVX.svg"
     },
     {
       "batch": "0604",
@@ -1529,7 +1529,7 @@ window.MIC_DATA = {
       "controlMean": "0.6497",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1804121299__AMK.svg"
+      "chartPath": "charts/1804121299__AMK.svg"
     },
     {
       "batch": "0604",
@@ -1542,7 +1542,7 @@ window.MIC_DATA = {
       "controlMean": "0.6497",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1804121299__POL.svg"
+      "chartPath": "charts/1804121299__POL.svg"
     },
     {
       "batch": "0604",
@@ -1555,7 +1555,7 @@ window.MIC_DATA = {
       "controlMean": "0.6497",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1804121299__TGC.svg"
+      "chartPath": "charts/1804121299__TGC.svg"
     },
     {
       "batch": "0604",
@@ -1568,7 +1568,7 @@ window.MIC_DATA = {
       "controlMean": "0.6406",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1804121299__SXT.svg"
+      "chartPath": "charts/1804121299__SXT.svg"
     },
     {
       "batch": "0604",
@@ -1581,7 +1581,7 @@ window.MIC_DATA = {
       "controlMean": "0.6406",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1804121299__CAZ-AVI.svg"
+      "chartPath": "charts/1804121299__CAZ-AVI.svg"
     },
     {
       "batch": "0604",
@@ -1594,7 +1594,7 @@ window.MIC_DATA = {
       "controlMean": "0.6406",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1804121299__ATM-AVI.svg"
+      "chartPath": "charts/1804121299__ATM-AVI.svg"
     },
     {
       "batch": "0604",
@@ -1607,7 +1607,7 @@ window.MIC_DATA = {
       "controlMean": "0.5064",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1807101274__ATM.svg"
+      "chartPath": "charts/1807101274__ATM.svg"
     },
     {
       "batch": "0604",
@@ -1620,7 +1620,7 @@ window.MIC_DATA = {
       "controlMean": "0.5064",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1807101274__CRO.svg"
+      "chartPath": "charts/1807101274__CRO.svg"
     },
     {
       "batch": "0604",
@@ -1633,7 +1633,7 @@ window.MIC_DATA = {
       "controlMean": "0.5064",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1807101274__MEM.svg"
+      "chartPath": "charts/1807101274__MEM.svg"
     },
     {
       "batch": "0604",
@@ -1646,7 +1646,7 @@ window.MIC_DATA = {
       "controlMean": "0.5064",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1807101274__LVX.svg"
+      "chartPath": "charts/1807101274__LVX.svg"
     },
     {
       "batch": "0604",
@@ -1659,7 +1659,7 @@ window.MIC_DATA = {
       "controlMean": "0.5064",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1807101274__AMK.svg"
+      "chartPath": "charts/1807101274__AMK.svg"
     },
     {
       "batch": "0604",
@@ -1672,7 +1672,7 @@ window.MIC_DATA = {
       "controlMean": "0.5064",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1807101274__POL.svg"
+      "chartPath": "charts/1807101274__POL.svg"
     },
     {
       "batch": "0604",
@@ -1685,7 +1685,7 @@ window.MIC_DATA = {
       "controlMean": "0.5064",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1807101274__TGC.svg"
+      "chartPath": "charts/1807101274__TGC.svg"
     },
     {
       "batch": "0604",
@@ -1698,7 +1698,7 @@ window.MIC_DATA = {
       "controlMean": "0.5078",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1807101274__SXT.svg"
+      "chartPath": "charts/1807101274__SXT.svg"
     },
     {
       "batch": "0604",
@@ -1711,7 +1711,7 @@ window.MIC_DATA = {
       "controlMean": "0.5078",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1807101274__CAZ-AVI.svg"
+      "chartPath": "charts/1807101274__CAZ-AVI.svg"
     },
     {
       "batch": "0604",
@@ -1724,7 +1724,7 @@ window.MIC_DATA = {
       "controlMean": "0.5078",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1807101274__ATM-AVI.svg"
+      "chartPath": "charts/1807101274__ATM-AVI.svg"
     },
     {
       "batch": "0604",
@@ -1737,7 +1737,7 @@ window.MIC_DATA = {
       "controlMean": "0.5439",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1812291089__ATM.svg"
+      "chartPath": "charts/1812291089__ATM.svg"
     },
     {
       "batch": "0604",
@@ -1750,7 +1750,7 @@ window.MIC_DATA = {
       "controlMean": "0.5439",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1812291089__CRO.svg"
+      "chartPath": "charts/1812291089__CRO.svg"
     },
     {
       "batch": "0604",
@@ -1763,7 +1763,7 @@ window.MIC_DATA = {
       "controlMean": "0.5439",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1812291089__MEM.svg"
+      "chartPath": "charts/1812291089__MEM.svg"
     },
     {
       "batch": "0604",
@@ -1776,7 +1776,7 @@ window.MIC_DATA = {
       "controlMean": "0.5439",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1812291089__LVX.svg"
+      "chartPath": "charts/1812291089__LVX.svg"
     },
     {
       "batch": "0604",
@@ -1789,7 +1789,7 @@ window.MIC_DATA = {
       "controlMean": "0.5439",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1812291089__AMK.svg"
+      "chartPath": "charts/1812291089__AMK.svg"
     },
     {
       "batch": "0604",
@@ -1802,7 +1802,7 @@ window.MIC_DATA = {
       "controlMean": "0.5439",
       "curveFlag": "noisy",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1812291089__POL.svg"
+      "chartPath": "charts/1812291089__POL.svg"
     },
     {
       "batch": "0604",
@@ -1815,7 +1815,7 @@ window.MIC_DATA = {
       "controlMean": "0.5439",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1812291089__TGC.svg"
+      "chartPath": "charts/1812291089__TGC.svg"
     },
     {
       "batch": "0604",
@@ -1828,7 +1828,7 @@ window.MIC_DATA = {
       "controlMean": "0.6138",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1812291089__SXT.svg"
+      "chartPath": "charts/1812291089__SXT.svg"
     },
     {
       "batch": "0604",
@@ -1841,7 +1841,7 @@ window.MIC_DATA = {
       "controlMean": "0.6138",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1812291089__CAZ-AVI.svg"
+      "chartPath": "charts/1812291089__CAZ-AVI.svg"
     },
     {
       "batch": "0604",
@@ -1854,7 +1854,7 @@ window.MIC_DATA = {
       "controlMean": "0.6138",
       "curveFlag": "ok",
       "replicateCount": "3",
-      "chartPath": "assets/mic_results_0604/charts/1812291089__ATM-AVI.svg"
+      "chartPath": "charts/1812291089__ATM-AVI.svg"
     }
   ],
   "averages": [
