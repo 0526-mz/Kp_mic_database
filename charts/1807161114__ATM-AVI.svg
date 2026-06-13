@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520">
+<style>
+text { font-family: Arial, sans-serif; fill: #1f2933; }
+.title { font-size: 22px; font-weight: 700; }
+.axis { stroke: #34495e; stroke-width: 1.5; }
+.grid { stroke: #d8dee6; stroke-width: 1; }
+.curve { fill: none; stroke: #0f766e; stroke-width: 3; }
+.point { fill: #115e59; }
+.control { stroke: #b45309; stroke-width: 1.5; stroke-dasharray: 6 4; }
+.label { font-size: 12px; }
+.small { font-size: 11px; }
+</style>
+<rect x="0" y="0" width="920" height="520" fill="#ffffff"/>
+<text class="title" x="72" y="26">1807161114 | ATM-AVI | MIC &gt;64/4</text>
+<line class="grid" x1="72" y1="424.00" x2="884" y2="424.00"/>
+<text class="label" x="62" y="428.00" text-anchor="end">0.00</text>
+<line class="grid" x1="72" y1="359.33" x2="884" y2="359.33"/>
+<text class="label" x="62" y="363.33" text-anchor="end">0.14</text>
+<line class="grid" x1="72" y1="294.67" x2="884" y2="294.67"/>
+<text class="label" x="62" y="298.67" text-anchor="end">0.28</text>
+<line class="grid" x1="72" y1="230.00" x2="884" y2="230.00"/>
+<text class="label" x="62" y="234.00" text-anchor="end">0.41</text>
+<line class="grid" x1="72" y1="165.33" x2="884" y2="165.33"/>
+<text class="label" x="62" y="169.33" text-anchor="end">0.55</text>
+<line class="grid" x1="72" y1="100.67" x2="884" y2="100.67"/>
+<text class="label" x="62" y="104.67" text-anchor="end">0.69</text>
+<line class="grid" x1="72" y1="36.00" x2="884" y2="36.00"/>
+<text class="label" x="62" y="40.00" text-anchor="end">0.83</text>
+<line class="axis" x1="72" y1="36" x2="72" y2="424"/>
+<line class="axis" x1="72" y1="424" x2="884" y2="424"/>
+<line class="control" x1="72" y1="78.28" x2="884" y2="78.28"/>
+<text class="small" x="884" y="72.28" text-anchor="end">control 0.739</text>
+<polyline class="curve" points="72.00,360.13 153.20,331.90 234.40,293.21 315.60,280.27 396.80,287.13 478.00,255.78 559.20,257.81 640.40,234.57 721.60,241.90 802.80,218.66 884.00,264.05"/>
+<circle class="point" cx="72.00" cy="360.13" r="4.2"/>
+<text class="small" x="72.00" y="442" text-anchor="middle">64/4</text>
+<circle class="point" cx="153.20" cy="331.90" r="4.2"/>
+<text class="small" x="153.20" y="442" text-anchor="middle">32/4</text>
+<circle class="point" cx="234.40" cy="293.21" r="4.2"/>
+<text class="small" x="234.40" y="442" text-anchor="middle">16/4</text>
+<circle class="point" cx="315.60" cy="280.27" r="4.2"/>
+<text class="small" x="315.60" y="442" text-anchor="middle">8/4</text>
+<circle class="point" cx="396.80" cy="287.13" r="4.2"/>
+<text class="small" x="396.80" y="442" text-anchor="middle">4/4</text>
+<circle class="point" cx="478.00" cy="255.78" r="4.2"/>
+<text class="small" x="478.00" y="442" text-anchor="middle">2/4</text>
+<circle class="point" cx="559.20" cy="257.81" r="4.2"/>
+<text class="small" x="559.20" y="442" text-anchor="middle">1/4</text>
+<circle class="point" cx="640.40" cy="234.57" r="4.2"/>
+<text class="small" x="640.40" y="442" text-anchor="middle">0.5/4</text>
+<circle class="point" cx="721.60" cy="241.90" r="4.2"/>
+<text class="small" x="721.60" y="442" text-anchor="middle">0.25/4</text>
+<circle class="point" cx="802.80" cy="218.66" r="4.2"/>
+<text class="small" x="802.80" y="442" text-anchor="middle">0.128/4</text>
+<circle class="point" cx="884.00" cy="264.05" r="4.2"/>
+<text class="small" x="884.00" y="442" text-anchor="middle">0.064/4</text>
+<text class="label" x="478.00" y="492" text-anchor="middle">Concentration (ug/mL)</text>
+<text class="label" transform="translate(22 230.00) rotate(-90)" text-anchor="middle">OD630 after blank subtraction</text>
+</svg>
